@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hero_section {
+    background-image: url(images/heroSectionBackground.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height: 60vh;
+  }
+  
+  .navbar {
+    padding: 40px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+  }
+  
+  .navbar_menu_container {
+    display: flex;
+    gap: 40px;
+    margin-right: 150px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+  }
+  
+  #app {
+    font-size: small;
+    margin: 160px;
+  }
+  
+  .zomato {
+    display: flex;
+    flex-direction: column; /* Adjusted to column layout */
+    align-items: center;
+    padding-top: 50px;
+  }
+  
+  .zomato h1 {
+    font-size: 70px;
+  }
+  
+  .zomato_p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .zomato_p p {
+    font-size: 35px;
+  }
+  
+  .input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  input {
+    width: 600px;
+    height: 60px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 0.5px solid rgba(220, 220, 220, 0.516);
+    text-indent: 30px;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  .input1 {
+    width: 200px;
+    border-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    text-indent: 30px;
+  }
+  
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    padding: 20px; /* Added padding for spacing */
+    gap: 0px;
+  }
+  
+  .cards {
+    border: 1px solid #b4b4b489;
+    border-radius: 10px;
+    max-width: 300px;
+    text-align: center;
+    margin: 16px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .cards div{
+    display: flex;
+    flex-direction: column;
+  }
+  .card-title {
+    color: #525252;
+    font-size: 1.4rem;
+    margin-right: 120px;
+    margin-bottom: 8px;
+    text-wrap: nowrap;
+  }
+  
+  .card-content {
+    color: #666;
+    font-size: 13px;
+    margin-left: -30px;
+    text-wrap: nowrap;
+    margin-bottom: 10px;
+  }
+  
+  
+  .cards:hover {
+    transform: scale(1.1); 
+  }
+  
+  .cards1{
+    border: 1px solid #b4b4b489;
+    border-radius: 10px;
+    max-width: 300px;
+    text-align: center;
+    margin: 16px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .box_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+    grid-column-gap: 10px;
+  }
+  .box {
+    background-color: #ffffff;
+    padding: 10px;
+    margin-left: 15px;
+    width: 100%;
+    text-align: left;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .box:hover{
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+  }
+  .box h2{
+    font-weight: 100;
+    font-size: 20px;
+  }
+  .box p{
+    font-weight: 100;
+    font-size: 15px;
+  }
+ 
+  .btn1{
+    background: rgb(240,84,92);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    width:35%;
+    height: 3.1rem; 
+    cursor: pointer;
+    font-size: 15px;
+  }
+  .btn1:hover{
+    background-color: rgb(225, 75, 83);
+  }
+
+  .inpt{
+    border: 1px solid #cdcdcd; 
+    border-radius: 10px; 
+    text-indent: 20px;
+    width: 70%;
+    height: 3.5rem;
+    font-size: 16px;
+  }
+  .placeholder{
+    position: absolute;
+    bottom: 35px;
+    left: 20px;
+    color: #c7c7c7;
+    font-size: 17px;
+    transition: 0.3s;
+    pointer-events: none;
+  }
+
+  .inpt:focus + .placeholder{
+    bottom: 66px;
+    font-size: 13px;
+    color: green;
+    background-color: #fff;
+  }
+  .inpt:focus{
+    border: 1px solid green;
+  }
+
+  .zoma{
+    font-weight: 600;
+    font-size: larger;
+  }
+  a{
+    text-decoration: none;
+    color: rgb(93, 93, 93);
+    font-weight: 100;
+  }
+  ul,li{
+    list-style-type: none;
+    margin-top: 10px;
+  }
